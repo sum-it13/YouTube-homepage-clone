@@ -1,15 +1,462 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>YouTube Clone</title>
-        <style>
-            .thumbnail{
-                width: 300px;
-            }
-        </style>
-    </head>
-    <body>
-        <img class="thumbnail" src="thumbnails/markas.webp">
+  <head>
+    <title>YouTube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+  <body>
+    <div class="header">
+      
+      <div class="left-section">
+        <img class="ham" src="header/hamburger-menu.svg">
+        <img class="logo" src="header/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
         <input class="search" type="text" placeholder="Search">
-    </body>
+        <button class="search-but">
+          <img class="search-icon" src="header/search.svg">
+          <div class="tool-tip">
+            Search
+          </div>
+        </button>
+        <button class="voice">
+          <img class="voice-icon" src="header/voice-search-icon.svg">
+          <div class="tool-tip">
+            Search with your voice
+          </div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-cont">
+          <img class="upload" src="header/upload.svg">
+          <div class="tool-tip">
+            Create
+          </div>
+        </div>
+        <div class="apps-cont">
+          <img class="ytapps" src="header/youtube-apps.svg">
+          <div class="tool-tip">
+            Youtube apps
+          </div>
+        </div>
+        <div class="noti-cont">
+          <div class="noti-count"><img class="noti" src="header/notifications.svg">
+            <div class="notif-count">3</div>
+            <div class="tool-tip">
+              Notifications
+            </div>
+        </div>
+        </div>
+          <img class="user" src="icon/unnamed.jpg">
+      </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-link">
+          <img src="sidebar icons/home.svg">
+          <div>
+            Home
+          </div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar icons/explore.svg">
+          <div>
+            Explore
+          </div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar icons/subscriptions.svg">
+          <div>
+            Subscriptions
+          </div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar icons/originals.svg">
+          <div>
+            Originals
+          </div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar icons/youtube-music.svg">
+          <div>
+            YouTube Music
+          </div>
+        </div>
+        <div class="sidebar-link">
+          <img src="sidebar icons/library.svg">
+          <div>
+            Library
+          </div>
+        </div>
+    </div>
+    
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/markas.webp">
+          </a>
+          <div class="video-time">
+            14:20
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/markus.jpeg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+            </a>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=fMJqwD7_-NU&ab_channel=Kurzgesagt%E2%80%93InaNutshell" target="_blank" class="video-title-link">
+              <img class="thumbnail" src="thumbnails/kurtz.webp">
+            </a>
+            <div class="video-time">
+              2:31
+            </div>
+        </div>
+        
+          <div class="video-info-grid">
+            <div class="icon">
+              <img class="profile" src="icon/kurz.jpg">
+            </div>
+            <div class="info">
+              <a href="https://www.youtube.com/watch?v=fMJqwD7_-NU&ab_channel=Kurzgesagt%E2%80%93InaNutshell" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  HIDDEN WORLDS - Limited Edition Calendar!
+              </p>
+              </a>
+              
+            <p class="video-author">
+              Kurzgesagt &#8211; In a Nutshell
+            </p>
+            <p class="video-stats">
+              308K views &#183; 2 days ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=sA-egKJz2Q0&ab_channel=smile-wA-" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/nancy.webp">
+          </a>
+          
+          <div class="video-time">
+            3:28
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/momo.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=sA-egKJz2Q0&ab_channel=smile-wA-" target="_blank" class="video-title-link">
+              <p class="video-title">
+                190331 모모랜드 (MOMOLAND) 'I'm So Hot' 낸시 직캠 @코엑스 팬사인회 4K Fancam by -wA-
+              </p>
+            </a>
+            
+            <p class="video-author">
+              smile -wA-
+            </p>
+            <p class="video-stats">
+              3.9M views &#183; 3 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=a0Zvt__LvDw&ab_channel=HowToMen" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/pixel.webp">
+          </a>
+            
+            <div class="video-time">
+              13:23
+            </div>
+        </div>
+          <div class="video-info-grid">
+            <div class="icon">
+              <img class="profile" src="icon/pixel.jpg">
+            </div>
+            <div class="video-time">
+              13:23
+            </div>
+            <div class="info">
+              <a href="https://www.youtube.com/watch?v=a0Zvt__LvDw&ab_channel=HowToMen">
+                <p class="video-title">
+                  Give your Android the Pixel Experience It Deserves!
+              </p>
+              </a>
+              
+            <p class="video-author">
+              HowToMen
+            </p>
+            <p class="video-stats">
+              574K views &#183; 9 months ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=nETQGtt024k&ab_channel=LinusTechTips" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/ltt.webp">
+          </a>
+          
+          <div class="video-time">
+            3:48:49
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/ltt.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=nETQGtt024k&ab_channel=LinusTechTips" target="_blank" class="video-title-link">
+              <p class="video-title">
+                I will play ANY game you ask on Intel Arc
+              </p>
+            </a>
+            
+            <p class="video-author">
+              Linus Tech Tips
+            </p>
+            <p class="video-stats">
+              930K views &#183; 6 days ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=Ro5EtGRNTGQ&ab_channel=HotstarUSA" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/abd.webp">
+          </a>
+            
+            <div class="video-time">
+              0:30
+            </div>
+        </div>
+          <div class="video-info-grid">
+            <div class="icon">
+              <img class="profile" src="icon/abd.jpg">
+            </div>
+            <div class="info">
+            <a href="https://www.youtube.com/watch?v=Ro5EtGRNTGQ&ab_channel=HotstarUSA" target="_blank" class="video-title-link">
+              <p class="video-title">
+                VIVO IPL Moments | ABD
+            </p>
+            </a>
+              
+            <p class="video-author">
+              Hotstar USA
+            </p>
+            <p class="video-stats">
+              8.1M views &#183; 2 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=dphagk4O5qA&ab_channel=ScenicScenes" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/ndia.webp">
+          </a>
+          
+          <div class="video-time">
+              28:08
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/india.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=dphagk4O5qA&ab_channel=ScenicScenes" target="_blank" class="video-title-link">
+              <p class="video-title">
+                India In 4K - Incredible Scenes Of India | Scenic Relaxation Film
+              </p>
+            </a>
+            
+            <p class="video-author">
+              Scenic Scenes
+            </p>
+            <p class="video-stats">
+              1.1M views &#183; 6 months ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=vtvFVH9JdNI&ab_channel=Mrwhosetheboss">
+            <img class="thumbnail" src="thumbnails/mrboss.webp">
+          </a>
+            
+            <div class="video-time">
+              23:00
+            </div>
+        </div>
+          <div class="video-info-grid">
+            <div class="icon">
+              <img class="profile" src="icon/mrboss.jpg">
+            </div>
+            <div class="info">
+              <a href="https://www.youtube.com/watch?v=vtvFVH9JdNI&ab_channel=Mrwhosetheboss" target="_blank" class="video-title-link">
+                <p class="video-title">
+                  I bought every Nintendo Console EVER.
+              </p>
+              </a>
+              
+            <p class="video-author">
+              Mrwhosetheboss
+            </p>
+            <p class="video-stats">
+              1.8M views &#183; 6 months ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=0nZuYyXET3s&ab_channel=DestinationTips" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/dubai.webp">
+          </a>
+          
+          <div class="video-time">
+              4:10
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/dubai.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=0nZuYyXET3s&ab_channel=DestinationTips" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+              </p>
+            </a>
+            
+            <p class="video-author">
+              Destination Tips
+            </p>
+            <p class="video-stats">
+              4.2M views &#183; 2 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg&ab_channel=MrBeast" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/mrbeast.webp">
+          </a>
+          
+          <div class="video-time">
+              19:59
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/mrbeast.jpeg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg&ab_channel=MrBeast" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Anything You Can Fit In The Circle Ill Pay For
+              </p>
+            </a>
+            
+            <p class="video-author">
+              MrBeast
+            </p>
+            <p class="video-stats">
+              176M views &#183; 2 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/versat.webp">
+          </a>
+          
+          <div class="video-time">
+              22:08
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/versat.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium" target="_blank" class="video-title-link">
+              <p class="video-title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </p>
+            </a>
+            
+            <p class="video-author">
+              Veritasium
+            </p>
+            <p class="video-stats">
+              30M views &#183; 1 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o&ab_channel=BusinessInsider" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/bussi.webp">
+          </a>
+          
+          <div class="video-time">
+              7:53
+          </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="icon">
+            <img class="profile" src="icon/bussi.jpg">
+          </div>
+          <div class="info">
+            <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o&ab_channel=BusinessInsider" target="_blank" class="video-title-link">
+              <p class="video-title">
+                How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+              </p>
+            </a>
+            
+            <p class="video-author">
+              Business Insider
+            </p>
+            <p class="video-stats">
+              18M views &#183; 2 years ago
+            </p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
